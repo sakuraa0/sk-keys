@@ -1,4 +1,5 @@
-# sk-keys
+# 🔑 sk-keys 🔑
+
 Sk-keys Script for qb-core
 
 Buy Now: https://sk-scripts-webstore.tebex.io/package/6179402 
