@@ -6,6 +6,8 @@ Buy Now: https://sk-scripts-webstore.tebex.io/package/6179402
 
 Docs: https://app.gitbook.com/o/kTlCKAoKMU0nfhJuQKn5/s/OyepVcY3QAsjRL5pHyIV/
 
+Preview: Coming Soon!
+
 Usefull Readme
 
 ##export to give key
