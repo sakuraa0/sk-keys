@@ -1,14 +1,15 @@
-# 🔑 sk-keys 🔑
+# 🔑 sk-keys [v.1.0.6] 🔑
 
-Sk-keys Script for qb-core
+Sk-keys Script for qb-core 
+author: Sakura Scripts
 
 Buy Now: https://sk-scripts-webstore.tebex.io/package/6179402 
-
 Docs: https://app.gitbook.com/o/kTlCKAoKMU0nfhJuQKn5/s/OyepVcY3QAsjRL5pHyIV/
-
 Preview: Coming Soon!
+Discord: https://discord.gg/HCaADtSrYt
 
-Usefull Readme
+
+Read:
 
 ##export to give key
 exports['sk-keys']:givekey(plate, model)
