@@ -1,11 +1,11 @@
-# 🔑 sk-keys [v.1.0.6] 🔑
+# 🔑 sk-keys [v.1.0.9] 🔑
 
 Sk-keys Script for qb-core 
 author: Sakura Scripts
 
 Buy Now: https://sk-scripts-webstore.tebex.io/package/6179402 
 Docs: https://app.gitbook.com/o/kTlCKAoKMU0nfhJuQKn5/s/OyepVcY3QAsjRL5pHyIV/
-Preview: Coming Soon!
+Preview: (https://www.youtube.com/watch?v=wXjW2OduMJs)
 Discord: https://discord.gg/HCaADtSrYt
 
 
@@ -16,11 +16,11 @@ exports['sk-keys']:givekey(plate, model)
 ##export to remove key 
 exports['sk-keys']:removekey(plate)
 ##export for testdrive 
-exports['sk-keys']:testdrive(plate)
+exports['sk-keys']:tempkey(plate)
 ##export to buy
 exports['sk-keys']:buyvehicle(plate, model)
 ##give robbed key 
-exports['sk-keys']:givetemporarykey(plate)
+exports['sk-keys']:robkey(plate)
 ##Change Car locks
 exports['sk-keys']changelocks(data)
 
