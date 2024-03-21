@@ -16,13 +16,15 @@ exports['sk-keys']:givekey(plate, model)
 ##export to remove key 
 exports['sk-keys']:removekey(plate)
 ##export for testdrive 
-exports['sk-keys']:tempkey(plate)
+exports['sk-keys']:giverobbedkey(plate)
 ##export to buy
 exports['sk-keys']:buyvehicle(plate, model)
 ##give robbed key 
-exports['sk-keys']:robkey(plate)
+exports['sk-keys']:changelocks(plate)
 ##Change Car locks
-exports['sk-keys']changelocks(data)
+exports['sk-keys']tempkey(data)
+##Remove Robbed Key
+exports['sk-keys']:removetempkey(plate
 
 items:
 
