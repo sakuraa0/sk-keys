@@ -31,3 +31,19 @@ items:
 vehiclekey                   = { name = 'vehiclekey', label = 'Vehicle key', weight = 10, type = 'item', image = 'vehiclekeys.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = "" },
 robbedvehkey                   = { name = 'robbedvehkey', label = 'Robbed Key', weight = 10, type = 'item', image = 'vehiclekeys.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = "" },
 neonkit                   = { name = 'neonkit', label = 'Neon Key', weight = 10, type = 'item', image = 'neonkit.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = "Turn on/off your neons" },
+
+
+Dependencies:
+
+UI FOR MINIGAMES HACK: (You can change in utils.lua)
+
+https://github.com/Project-Sloth/ps-ui
+
+Disptach (Soon ill be changeable)
+
+https://github.com/Project-Sloth/ps-dispatch
+
+Lockpick: (you can change it to)
+
+https://github.com/sakuraa0/Lockpick-FiveM-qb-esx
+
