@@ -1,4 +1,4 @@
-# 🔑 sk-keys [v.1.0.9] 🔑
+# 🔑 sk-keys [v.1.1.1] 🔑
 
 Sk-keys Script for qb-core 
 author: Sakura Scripts
