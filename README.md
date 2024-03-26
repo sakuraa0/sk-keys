@@ -4,7 +4,7 @@ Sk-keys Script for qb-core
 author: Sakura Scripts
 
 Buy Now: https://sk-scripts-webstore.tebex.io/package/6179402 
-Docs: https://app.gitbook.com/o/kTlCKAoKMU0nfhJuQKn5/s/OyepVcY3QAsjRL5pHyIV/
+Docs: [https://app.gitbook.com/o/kTlCKAoKMU0nfhJuQKn5/s/OyepVcY3QAsjRL5pHyIV/](https://sakura-scripts.gitbook.io/sakura-script-key/)
 Preview: (https://www.youtube.com/watch?v=wXjW2OduMJs)
 Discord: https://discord.gg/HCaADtSrYt
 
