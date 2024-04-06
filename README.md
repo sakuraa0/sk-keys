@@ -1,4 +1,4 @@
-# 🔑 sk-keys [v.1.1.1] 🔑
+# 🔑 sk-keys [v.1.2] 🔑
 
 Sk-keys Script for qb-core 
 author: Sakura Scripts
@@ -11,20 +11,26 @@ Discord: https://discord.gg/HCaADtSrYt
 
 Read:
 
-##export to give key
-exports['sk-keys']:givekey(plate, model)
+##export to remove temporary key
+exports['sk-keys']:removetempkey(plate)
+
 ##export to remove key 
 exports['sk-keys']:removekey(plate)
+
 ##export for testdrive 
-exports['sk-keys']:giverobbedkey(plate)
+exports['sk-keys']:givetemporary(plate)
+
 ##export to buy
 exports['sk-keys']:buyvehicle(plate, model)
+
 ##give robbed key 
 exports['sk-keys']:changelocks(plate)
+
 ##Change Car locks
 exports['sk-keys']tempkey(data)
-##Remove Robbed Key
-exports['sk-keys']:removetempkey(plate
+
+##Give Keys (Garage, jobs and more)
+exports['sk-keys']givekey(plate, model)
 
 items:
 
