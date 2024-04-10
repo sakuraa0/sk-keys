@@ -11,26 +11,29 @@ Discord: https://discord.gg/HCaADtSrYt
 
 Read:
 
-##export to remove temporary key
+##export to remove temp key
 exports['sk-keys']:removetempkey(plate)
+
+##Remove Temporary Key item 
+exports['sk-keys']:removetemporary(plate)
 
 ##export to remove key 
 exports['sk-keys']:removekey(plate)
 
-##export for testdrive 
+##Temporay key
 exports['sk-keys']:givetemporary(plate)
 
 ##export to buy
 exports['sk-keys']:buyvehicle(plate, model)
 
-##give robbed key 
+##Change lock key
 exports['sk-keys']:changelocks(plate)
 
-##Change Car locks
-exports['sk-keys']tempkey(data)
+##Temporary Key
+exports['sk-keys']:tempkey(data)
 
-##Give Keys (Garage, jobs and more)
-exports['sk-keys']givekey(plate, model)
+##Give Keys
+exports['sk-keys']:givekey(plate, model)
 
 items:
 
