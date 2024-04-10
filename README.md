@@ -54,11 +54,11 @@ UI FOR MINIGAMES HACK: (You can change in utils.lua)
 
 https://github.com/Project-Sloth/ps-ui
 
-Disptach (Soon ill be changeable)
+Disptach (You can change in utils.lua)
 
 https://github.com/Project-Sloth/ps-dispatch
 
-Lockpick: (you can change it to)
+Lockpick: (You can change in utils.lua)
 
 https://github.com/sakuraa0/Lockpick-FiveM-qb-esx
 
