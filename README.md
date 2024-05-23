@@ -1,6 +1,6 @@
-# 🔑 sk-keys [v.1.2] 🔑
+# 🔑 sk-keys [v.2.0] 🔑
 
-Sk-keys Script for qb-core 
+Sk-keys System for [QB/ESX]
 author: Sakura Scripts
 
 Buy Now: https://sk-scripts-webstore.tebex.io/package/6179402 
