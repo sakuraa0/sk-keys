@@ -11,6 +11,8 @@ Docs: [https://app.gitbook.com/o/kTlCKAoKMU0nfhJuQKn5/s/OyepVcY3QAsjRL5pHyIV/](h
 
 Preview: (https://www.youtube.com/watch?v=wXjW2OduMJs)
 
+Config File Preview: ![Captura de ecrã 2024-05-23 151709](https://github.com/sakuraa0/sk-keys/assets/69822832/36269970-e2f9-4bdf-a85b-b24de83def1e)
+
 
 Discord: https://discord.gg/HCaADtSrYt
 
