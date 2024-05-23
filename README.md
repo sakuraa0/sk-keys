@@ -18,33 +18,41 @@ Discord: https://discord.gg/HCaADtSrYt
 Read:
 
 ##export to remove temp key
+
 exports['sk-keys']:removetempkey(plate)
 
 ##Remove Temporary Key item 
+
 exports['sk-keys']:removetemporary(plate)
 
 ##export to remove key 
+
 exports['sk-keys']:removekey(plate)
 
 ##Temporay key
+
 exports['sk-keys']:givetemporary(plate)
 
 ##export to buy
+
 exports['sk-keys']:buyvehicle(plate, model)
 
 ##Change lock key
+
 exports['sk-keys']:changelocks(plate)
 
 ##Temporary Key
+
 exports['sk-keys']:tempkey(data)
 
 ##Give Keys
+
 exports['sk-keys']:givekey(plate, model)
 
 items:
 
 vehiclekey                   = { name = 'vehiclekey', label = 'Vehicle key', weight = 10, type = 'item', image = 'vehiclekeys.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = "" },
-robbedvehkey                   = { name = 'robbedvehkey', label = 'Robbed Key', weight = 10, type = 'item', image = 'vehiclekeys.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = "" },
+temporarykey                   = { name = 'temporarykey', label = 'Temporary Key', weight = 10, type = 'item', image = 'vehiclekeys.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = "" },
 neonkit                   = { name = 'neonkit', label = 'Neon Key', weight = 10, type = 'item', image = 'neonkit.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = "Turn on/off your neons" },
 
 
