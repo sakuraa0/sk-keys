@@ -1,74 +1,258 @@
-# 🔑 sk-keys [v.2.0] 🔑
+# 🔑 SK-KEYS [REWORKED] 🔑
 
-Sk-keys System for [QB/ESX]
-author: Sakura Scripts
+Advanced Vehicle Key & Lock System
 
-Buy Now: https://sk-scripts-webstore.tebex.io/package/6179402 
+Framework Compatible: QB-Core • QBOX • ESX
+Inventory Compatible: ox_inventory • qb-inventory • qs-inventory
+
+📌 Overview
+
+SK-Keys is a secure, multi-framework vehicle key system designed for serious roleplay servers.
+
+It supports:
+
+Permanent vehicle keys
+
+Temporary keys (admin / hotwire)
+
+Key lock reset system
+
+Key invalidation system (keylock)
+
+Hotwire system
+
+Lockpick system
+
+Multi-dispatch support
+
+Multi-target support
+
+Discord webhook logging
+
+Fully modular bridge system
+
+Framework auto-detection
+
+Inventory abstraction layer
+
+🧠 How It Works
+
+Each vehicle in the database has a keylock value.
+
+When locks are changed:
+
+The keylock value increases.
+
+Old keys become invalid automatically.
+
+Only keys with matching keylock work.
+
+This prevents:
+
+Key duplication exploits
+
+Permanent stolen key abuse
+
+Item cloning abuse
+
+🔐 Security Model
+
+Server-side ownership validation
+
+No client trust
+
+Key metadata verification
+
+Spam protection
+
+Framework abstraction
+
+Inventory abstraction
+
+Optional Discord logging
+
+Debug mode for development
+
+⚙ Configuration
+
+Located in:
+
+shared/shared.lua
 
 
-Docs: [https://app.gitbook.com/o/kTlCKAoKMU0nfhJuQKn5/s/OyepVcY3QAsjRL5pHyIV/](https://sakura-scripts.gitbook.io/sakura-script-key/)
+Important options:
+
+Shared.UseInventory = 'qs-inventory' -- qb-inventory / ox-inventory / qs-inventory
+Shared.UseCommands = true
+Shared.UseKeyLockSystemDatabase = true
+Shared.SpawnMaxMods = true
+Shared.Debug = false
+
+🚘 Admin Commands
+/car [model]
+
+Spawns a vehicle with:
+
+Max mods (if enabled)
+
+Temporary key automatically assigned
+
+/dv
+
+Deletes current vehicle and removes temporary key.
+
+🗝 Key System
+Permanent Key
+
+Given when:
+
+Player buys a vehicle
+
+Server manually gives key
+
+Temporary Key
+
+Given when:
+
+Admin uses /car
+
+Player hotwires vehicle
+
+Temporary keys bypass DB ownership checks.
+
+🔄 Supported Dispatch Systems
+
+ps-dispatch
+
+qs-dispatch
+
+cd_dispatch
+
+custom
+
+Configured in:
+
+Shared.Dispatch = 'ps'
+
+🎯 Target Support
+
+Automatically supports:
+
+ox_target
+
+qb-target
+
+📡 Discord Webhook Logging
+
+Supports:
+
+Vehicle purchase logs
+
+Lock change logs
+
+Admin command logs
+
+Configure:
+
+Shared.Webhook = {
+    Enabled = true,
+    URL = "YOUR_WEBHOOK_URL",
+    LogVehicleBuy = true,
+    LogLockChanges = true,
+    LogAdminCommands = true
+}
+
+🧩 Export Usage (Recommended)
+
+⚠ Do NOT trigger server events directly.
+Use exports instead.
+
+🔑 Buy Vehicle (Give Permanent Key)
+exports['sk-keys']:BuyVehicle(plate, model)
 
 
-Preview: (https://www.youtube.com/watch?v=wXjW2OduMJs)
+Example (vehicleshop):
 
-Config File Preview: ![Captura de ecrã 2024-05-23 151709](https://github.com/sakuraa0/sk-keys/assets/69822832/36269970-e2f9-4bdf-a85b-b24de83def1e)
+exports['sk-keys']:BuyVehicle("ABC123", "sultan")
 
-
-Discord: https://discord.gg/HCaADtSrYt
-
-
-Read:
-
-##export to remove temp key
-
-exports['sk-keys']:removetempkey(plate)
-
-##Remove Temporary Key item 
-
-exports['sk-keys']:removetemporary(plate)
-
-##export to remove key 
-
-exports['sk-keys']:removekey(plate)
-
-##Temporay key
-
+🗝 Give Temporary Key
 exports['sk-keys']:givetemporary(plate)
 
-##export to buy
+❌ Remove Temporary Key
+exports['sk-keys']:removetemporary(plate)
 
-exports['sk-keys']:buyvehicle(plate, model)
+🔐 Change Locks
+exports['sk-keys']:changelocks({
+    plate = "ABC123"
+})
 
-##Change lock key
+🚗 Give Key Manually
+exports['sk-keys']:givekeys(plate, model)
 
-exports['sk-keys']:changelocks(plate)
+❌ Remove Permanent Key
+exports['sk-keys']:removekey(plate)
 
-##Temporary Key
+📘 Example Integration
+Vehicleshop Integration Example
 
-exports['sk-keys']:tempkey(data)
+Replace old vehicle key system:
 
-##Give Keys
+-- REMOVE
+-- TriggerEvent('vehiclekeys:client:SetOwner', plate)
 
-exports['sk-keys']:givekey(plate, model)
+-- ADD
+exports['sk-keys']:BuyVehicle(plate, model)
 
-items:
+🛠 Developer Mode
 
-vehiclekey                   = { name = 'vehiclekey', label = 'Vehicle key', weight = 10, type = 'item', image = 'vehiclekeys.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = "" },
-temporarykey                   = { name = 'temporarykey', label = 'Temporary Key', weight = 10, type = 'item', image = 'vehiclekeys.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = "" },
-neonkit                   = { name = 'neonkit', label = 'Neon Key', weight = 10, type = 'item', image = 'neonkit.png', unique = true, useable = true, shouldClose = true, combinable = nil, description = "Turn on/off your neons" },
+Enable debug:
+
+Shared.Debug = true
 
 
-Dependencies:
+You will see:
 
-UI FOR MINIGAMES HACK: (You can change in utils.lua)
+Framework detection
 
-https://github.com/Project-Sloth/ps-ui
+Ownership checks
 
-Disptach (You can change in utils.lua)
+Key metadata
 
-https://github.com/Project-Sloth/ps-dispatch
+Inventory operations
 
-Lockpick: (You can change in utils.lua)
+HasKey validation
 
-https://github.com/sakuraa0/Lockpick-FiveM-qb-esx
+Webhook status
+
+Admin activity
+
+Everything is modular and framework-independent.
+
+🧠 Best Practices
+
+✔ Always use exports
+✔ Do not trigger events directly
+✔ Keep Shared.Debug disabled in production
+✔ Use Webhook logging for admin auditing
+✔ Keep inventory item name consistent
+
+💎 Premium Features
+
+Key invalidation system
+
+Multi-framework abstraction
+
+Multi-inventory abstraction
+
+Secure HasKey validation
+
+Admin vehicle system
+
+Temporary key system
+
+Database lock reset
+
+Optimized cache
+
+Clean architecture ready for escrow
 
